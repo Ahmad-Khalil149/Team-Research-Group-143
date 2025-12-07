@@ -13,6 +13,8 @@ colnames(df)[9]<-"scramble_%"
 print(colnames(df))
 
 #Checking the types of Columns especially used in our Research Question
+
 class(df$birdie_avg)
+#as first Column C1X which is numeric and Our 2nd column total_earnings are integer type
 class(df$C1R)
 class(df$total_earnings)
