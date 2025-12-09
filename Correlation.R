@@ -16,5 +16,14 @@ print(colnames(df))
 
 class(df$birdie_avg)
 #as first Column C1X which is numeric and Our 2nd column total_earnings are integer type
-class(df$C1R)
+class(df$C1X)
 class(df$total_earnings)
+
+
+#Now, removing the unrealistic values from Column C1X and total_earnings.
+df <- df[df$C1X >= 0 & df$C1X <= 100, ]
+df <- df[df$total_earning > 0, ]
+
+
+
+
