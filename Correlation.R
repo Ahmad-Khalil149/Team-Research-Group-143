@@ -27,3 +27,4 @@ df <- df[df$total_earning > 0, ]
 
 
 
+
