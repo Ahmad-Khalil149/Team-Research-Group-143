@@ -31,3 +31,12 @@ hist(DGPT24$total_earnings, main="Histogram of Total Earnings", xlab="Total Earn
 #Now we will do statistical test by using spearman method
 cor.test(DGPT24$C1X, DGPT24$total_earnings, method="spearman")
 
+#we will make a scatter plot with a trend line
+plot(DGPT24$C1X,
+     +      DGPT24$total_earnings,
+     +      main = "Scatter Plot : C1X vs Total Earnings",
+     +      xlab = "Circle 1 putting accuracy C1X ",
+     +      ylab = "Total Earnings ",)
+
+#for trend line
+abline(lm(total_earnings ~ C1X, data = DGPT24), col = "blue", )
