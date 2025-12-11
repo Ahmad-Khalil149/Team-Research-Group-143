@@ -28,5 +28,6 @@ DGPT24 <- DGPT24[DGPT24$total_earning > 0, ]
 hist(DGPT24$C1X, main="Histogram of C1X", xlab="C1X", col="green", border="black")
 hist(DGPT24$total_earnings, main="Histogram of Total Earnings", xlab="Total Earnings", col="yellow", border="black")
 
-
+#Now we will do statistical test by using spearman method
+cor.test(DGPT24$C1X, DGPT24$total_earnings, method="spearman")
 
