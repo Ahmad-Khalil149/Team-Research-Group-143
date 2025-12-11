@@ -40,3 +40,4 @@ plot(DGPT24$C1X,
 
 #for trend line
 abline(lm(total_earnings ~ C1X, data = DGPT24), col = "blue", )
+
